@@ -11,47 +11,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   background-color: #f2f2f2;
-  font-family: ''DM Sans', sans-serif';
-  font-size: medium;
 }
 
-a {
-  text-decoration: inherit;
+.container {
+  display: grid;
+  grid-template-columns: 75%, 25%;
+  grid-template-rows: auto;
 }
 
-img {
-  max-width: 100%;
+#one_image {
+  grid-column: 1 / span 2;
+  grid-row: 1;
 }
 
-/*----------App Component----------*/
+#image-gallery {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
 
-#middle_container {
-  display: block;
+#two_image {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+#menu {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  width: 100%;
+  height: auto;
+}
+
+#three_image{
+  grid-column: 1 / span 2;
+  grid-row: 5;
+  width: 100%;
+  height: auto;
   position: relative;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -12px;
 }
 
-.col_1 {
-  box-sizing: border-box;
-  display: block;
-  width: 66.66666667%;
-  padding: 0 12px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 0;
-}
-
-.col_2 {
-  box-sizing: border-box;
-  display: block;
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 0;
-  padding: 0 12px 12px;
+#reviews_component {
+  width: 100%;
+  height: auto;
   position: relative;
-  text-align: center;
-  width: 33.33333333%;
+}
+
+#col_1 {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+#five_image {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+#six_image {
+  grid-column: 1 / span 2;
+  grid-row: 7;
+}
+
+#q-a {
+  grid-column: 1  span 2;
+  grid-row: 8;
+}
+
+#seven {
+  grid-column: 1 / span 2;
+  grid-row: 9;
 }

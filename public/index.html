@@ -2,27 +2,26 @@
   <head>
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=DM+Sans|Open+Sans|Questrial&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <img src="images/one.jpg" />
-    <div>Photos</div>
-    <img src="images/two.jpg" />
-    <div id="menu"></div>
-    <img src="images/three.jpg" />
-    <div id="middle_container">
-      <div className="col_1">
-        <img src="images/four.jpg" id="details" />
+    <div class="container">
+      <img class="static_content" id="one_image" src="images/one.jpg" />
+      <div id="image-gallery"></div>
+      <img class="static_content" id="two_image" src="images/two.jpg" />
+      <div id="menu" ></div>
+      <img class="static_content" id="three_image" src="images/three.jpg" />
+      <div id="col_1">
+        <img class="static_content" src="images/four.jpg" id="four_image" />
         <div id="reviews_component"></div>
       </div>
-      <div className="col_2">
-        <img src="images/five.jpg" id="standalone_ad" />
-      </div>
+      <img class="static_content" src="images/five.jpg" id="five_image" />
+      <img id="six_image" src="images/six.jpg" />
+      <div id="q-a"></div>
+      <img class="static_content" id="seven" src="images/seven.jpg" />
     </div>
-    <img src="images/six.jpg" />
-    <div id="q-a"></div>
-    <img src="images/seven.jpg" />
 
-
+    <script type="text/javascript" src="http://localhost:3001/api/bundle"></script>
     <script type="text/javascript" src="http://localhost:3002/api/bundle"></script>
     <script type="text/javascript" src="http://localhost:3003/api/bundle"></script>
     <script type="text/javascript" src="http://localhost:3004/api/bundle.js"></script>
